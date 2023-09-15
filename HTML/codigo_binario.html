@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Binário</title>
+    <link rel="icon" type="image/png" href="../img/tool-box.png">
+
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+
+    <script src="../script/binario_calculaB.js" defer></script>
+    <script src="../script/binario_calculaD.js" defer></script>
+    <script src="../script/binario_main.js" defer></script>
+    <script src="../script/exibirResultado.js" defer></script>
+    <script src="../script/mudaSeta.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <h1 class="logo"><strong>>_</strong> Tool<strong>Box</strong>[] </h1>
+        </a>
+        <nav>
+            <ul class="navegacao">
+                <li class="navegacao__item">
+                    <a class="navegacao__item__link" href="codigo_binario.html">
+                        <img class="navegacao__item__link__imagem" src="../img/codigo-binario.png" alt="binário">
+                        BINÁRIO
+                    </a>
+                </li>
+                <li class="navegacao__item">
+                    <a class="navegacao__item__link" href="codigo_morse.html">
+                        <img class="navegacao__item__link__imagem" src="../img/codigo-morse.png" alt="morse">
+                        MORSE
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div class="conteiner">
+                <h1><strong>BINÁRIO para DECIMAL</strong></h1>
+                <textarea class="input" name="inputBinario" id="inputBinario" cols="30" rows="10"
+                    placeholder="Digite um valor de base binária"></textarea>
+                <input type="button" class="botao" id="binario" value="Converter para decimal">
+            </div>
+        </div>
+        <div class="column">
+            <svg class="opaco" id="setaDireita" xmlns="http://www.w3.org/2000/svg" height="5em" viewBox="0 0 512 512">
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                    svg {
+                        fill: #ff9100
+                    }
+                </style>
+                <path
+                    d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z" />
+            </svg>
+            <svg class="opaco" id="setaEsquerda" xmlns="http://www.w3.org/2000/svg" height="5em" viewBox="0 0 512 512">
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                    svg {
+                        fill: #ff9100
+                    }
+                </style>
+                <path
+                    d="M177.5 414c-8.8 3.8-19 2-26-4.6l-144-136C2.7 268.9 0 262.6 0 256s2.7-12.9 7.5-17.4l144-136c7-6.6 17.2-8.4 26-4.6s14.5 12.5 14.5 22l0 72 288 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-288 0 0 72c0 9.6-5.7 18.2-14.5 22z" />
+            </svg>
+        </div>
+        <div>
+            <div class="conteiner">
+                <h1><strong>DECIMAL para BINÁRIO</strong></h1>
+                <textarea class="input" name="inputDecimal" id="inputDecimal" cols="30" rows="10"
+                    placeholder="Digite um valor de base decimal"></textarea>
+                <input type="button" class="botao" id="decimal" value="Converter para binário">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="https://github.com/yagoMiron">
+            &copy; Desenvolvido por Yago Miron
+        </a>
+    </footer>
+</body>
+
+</html>
